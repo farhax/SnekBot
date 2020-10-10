@@ -1,5 +1,6 @@
 // load configuration
-const { prefix, token } = require('./config.json');
+const { prefix } = require('./config.json');
+const { token } = require('./token')
 
 
 // require the discord.js module
@@ -39,4 +40,4 @@ client.on('message', message => {
 });
 
 // login to Discord with your app's token
-client.login(process.env.BOT_TOKEN);
+client.login(token);
